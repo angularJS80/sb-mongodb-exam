@@ -12,7 +12,7 @@ import org.springframework.data.mongodb.MongoDbFactory;
 import org.springframework.data.mongodb.core.MongoTemplate;
 
 @SpringBootApplication
-public class MongodbApplication {
+public class MongodbApplication  {
 
 	@Autowired
 	MongoDbFactory mongoDbFactory;
@@ -25,6 +25,7 @@ public class MongodbApplication {
 
 	@Bean
 	public ApplicationRunner applicationRunner(){
+
 
 
 
@@ -42,6 +43,8 @@ public class MongodbApplication {
 		meeting.setTarget("here");
 		meeting.setTitle("study");
 		mongoTemplate.insert(meeting);
+
+
 		};
 
 
